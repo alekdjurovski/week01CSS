@@ -76,19 +76,50 @@ form button:hover{
 /* END NAVBAR */
 
 /* START WITH CONTENT OF WEBPAGE */
-
-/* END WITH CONTENT OF WEBPAGE */
-
-button{
-    /* margin: 1px; */
-
-}
-
 .block1{
     border: 1px solid black;
     margin:5px;
 }
 
 .grid-container {
-    margin:5px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
   }
+
+.grid-left{
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+}
+.grid-btn{
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    /* text-align: center; */
+    
+    
+    
+}
+
+.grid-btn button{
+    padding: 3%;
+    margin:0 20px 0 20px;
+    margin: 0px auto;
+}
+
+aside {
+    overflow:hidden;
+    width: 50%;
+    /* padding-left: .5rem; */
+    margin:2%;
+    float: right;
+    /* box-shadow: inset 5px 0 5px -5px #29627e; */
+    font-style: italic;
+    /* color: #29627e; */
+}
+
+/* END WITH CONTENT OF WEBPAGE */
+
+
+
