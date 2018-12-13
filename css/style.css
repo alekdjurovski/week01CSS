@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Inconsolata');
 body{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:#4452a0be;
+    font-family: 'Inconsolata', monospace;
+    background-color:rgb(233, 229, 219);
 }
 a:link{
     text-decoration: none;
@@ -11,7 +12,18 @@ a:link{
 button{
     /* padding: 1px 5px 1px 5px; */
     border-radius: 5px;
+    background-color:  rgba(53, 115, 153, 0.733);
 }
+.desc{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.nameCo{
+    margin-left: 7%;
+    color:rgb(20, 48, 65);
+}
+
+
 /* START HEADER */
 #logo{
     float: left;
@@ -19,46 +31,43 @@ button{
 .right{
     float: right;
 }
-
+.coverPic{
+    margin: 10px;
+}
+.link1{
+    margin-bottom: 2%;
+}
 /* END HEADER */
 
 /* START NAVBAR  */
 .navbar{
     overflow: hidden;
-    display: block;
+    display: flex;
     text-align: left;
+    align-items: center;
     width: 100%;
-    background-color:#dddddd;
-    color:white;
-    /* font-size: 1.4em; */
     font-weight: bold;
-    padding: 5px;
-
+    /* padding: 5px; */
     font-size: 18px;
-    background-image: linear-gradient(260deg, #2376ae 0%, #78a2c5   100%);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding-bottom: 10px;
-    color:white;
-    
+    background-image: linear-gradient(90deg, rgb(58, 84, 180), rgb(53, 114, 153));
 }
 nav a{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     color:white;
 }
 .navbar a:link{
     text-decoration: none;
 }
-
-
 a {
-    padding: 8px 16px;
+    /* padding: 10px 16px; */
     /* margin-top: 15px; */
     
 }
 
 nav a:hover{
-    background-color: #555;
+    background-color:rgba(26, 70, 97, 0.61);
     color: white;
+    border-radius: 5px;
 }
 
 #search{
@@ -75,21 +84,22 @@ form{
     margin-right:1%;
 }
 form button{
+    background-color: rgb(53, 114, 153);
     margin-left:-7px;
-    padding: 10px 20px;
-    border-color: #dddddd;
+    padding: 9px 20px;
+    border: none;
     cursor: pointer;
 }
 form button:hover{
-    background-color: #555;
+    background-color:rgba(26, 70, 97, 0.61);
     color: white;
 }
 @media screen and (max-width: 600px) {
     #search {
-        float: none;
+        float: left;
     }
     nav a{
-    display: block;
+    display: flex;
     text-align: left;
     width: 100%;
     margin: 0;
@@ -103,7 +113,7 @@ form button:hover{
     display: grid;
     grid-template-columns: 70% 30%;
     /* grid-gap: 10px; */
-    background-color: rgb(103, 137, 160);
+    background-color:rgb(233, 229, 219);
     padding: 10px;
 }
 .blockLeft{
@@ -123,28 +133,57 @@ form button:hover{
 
 
 .grid-left{
-    display:grid;
-    grid-template-columns:auto auto auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
 }
-h2{
-    background-color: #555
+
+.news{
+    text-align: center;
+    margin: 2%;
+    /* justify-content: center; */
+    /* align-content: center; */
 }
+.review{
+    margin: 2%;
+    
+}
+
 h2, h3{
     margin:5px;
+    background-color: rgb(53, 114, 153);
+    padding: 0.4em;
+    color: white;
 }
-.grid-btn{
-    display: inline-grid;
-    grid-template-columns: auto auto;
-    /* text-align: center; */
-    
-    
+
+.btn{
+    text-align: center;
+    margin-top: 2%;
     
 }
-.grid-btn{
+
+.btn-1{
+    padding: 1.5% 4%;
+    margin: 0 8%;
+    font-size: 1.2em;
+    
+}
+
+.btn-2{
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+    padding: 1.5% 4%;
+    font-size: 1em;
+
+}
+.center{
     text-align: center;
 }
+
 .grid-btn button{
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 aside {
@@ -156,8 +195,17 @@ aside {
     box-shadow: inset 5px 0 5px -5px #29627e;
     font-style: italic;
     font-size: 1.7em;
+    max-height: 85%;
     /* color: #29627e; */
 }
+
+ul.square {
+    list-style-type: square;
+    
+  }
+  .square li{
+      padding:5px;
+  }
 
 /* END WITH CONTENT OF WEBPAGE */
 
@@ -167,9 +215,19 @@ footer{
 }
 .navfooter a{
     color:black;
+    
+}
+.navfooter a:link{
+    text-decoration: underline;
+}
+.navfooter a:hover{
+    background-color:rgb(53, 114, 153);
+    color: white;
+    border-bottom-style: 5px;
+    border-bottom-right-radius: 5px;
 }
 hr{
     height: 15px;
-    background-color: black
+    background-color: rgb(53, 114, 153);
 }
 /* END FOOTER  */
