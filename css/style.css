@@ -95,9 +95,6 @@ input{
     border: none;
 }
 
-form{
-    /* margin-right:1%; */
-}
 form button{
     background-color: rgb(53, 114, 153);
     margin-left:-7px;
@@ -135,7 +132,7 @@ form button:hover{
     border: 1px solid black;
     margin:5px;
     display: grid;
-    grid-template-row: auto auto;
+    grid-template-rows: auto auto;
 }
 .blockRight{
     border: 1px solid black;
@@ -197,9 +194,6 @@ h2, h3{
     text-align: center;
 }
 
-.grid-btn button{
-    /* margin: 20px; */
-}
 
 aside {
     overflow: hidden;
